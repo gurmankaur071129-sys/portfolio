@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+  <style>
+    @layer utilities {
+      .text-cyan { @apply text-cyan-400; }
+      .gradient-primary { @apply bg-gradient-to-r from-indigo-500 to-pink-500; }
+    }
+  </style>
+</head>
+
+<body class="bg-[#0F172A] text-white font-sans">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed w-full bg-gray-800 z-50 flex justify-between items-center px-5 md:px-8 py-3 shadow-lg">
+    <h3 class="text-teal-400 text-xl font-bold"><a href="#"><img src="./gmLogo.png" alt="Logo" width="120px"></a></h3>
+    <ul id="navbar-menu" class="list-none hidden lg:flex gap-6 md:gap-8 flex-wrap mr-20 fixed lg:static top-16 left-0 right-0 bg-gray-800 lg:bg-transparent flex-col lg:flex-row w-full lg:w-auto px-5 md:px-8 py-4 lg:py-0">
+      <li><a href="#about" class="text-white font-medium hover:text-teal-400 transition-colors duration-300">About</a></li>
+      <li><a href="#skills" class="text-white font-medium hover:text-teal-400 transition-colors duration-300">Skills</a></li>
+      <li><a href="#projects" class="text-white font-medium hover:text-teal-400 transition-colors duration-300">Projects</a></li>
+      <li><a href="#contact" class="text-white font-medium hover:text-teal-400 transition-colors duration-300">Contact</a></li>
+    </ul>
+    <i id="menu-toggle" class="ri-menu-line text-white block text-[40px] lg:hidden cursor-pointer"></i>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="gradient-primary min-h-[90vh] flex flex-wrap gap-10 justify-center items-center pt-20 px-5 md:pt-24">
+    <div class="flex-1 min-w-[300px] max-w-[500px]">
+      <h3 class="text-white text-lg mb-2">Hello, I'm</h3>
+      <h1 class="text-3xl md:text-5xl font-bold mb-3"><span class="text-teal-400">Gurman Kaur</span></h1>
+      <p class="text-2xl md:text-3xl my-4">Web Developer</p>
+      <a href="#projects" class="inline-block px-8 py-3 bg-white text-teal-700 rounded-full font-bold mt-5 hover:bg-teal-700 hover:text-white transition-all duration-300">View My Work</a>
+    </div>
+
+    <div class="flex-1 min-w-[350px] max-w-[450px] overflow-hidden">
+      <img src="./img9.jpeg" alt="Gurman Kaur" class="w-full h-auto rounded-full object-cover">
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 px-5 max-w-5xl mx-auto ">
+    <h1 class="mb-8 text-5xl md:text-4xl font-bold text-center text-teal-400">About Me</h1>
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-20 justify-center items-center mt-20">
+    <div class="rounded-lg overflow-hidden w-full lg:w-auto flex justify-center"><img src="./img9.jpeg" alt="About Gurman Kaur" class="w-full max-w-sm lg:max-w-none h-auto object-cover rounded-lg"></div>
+    <div class="border-4 border-teal-500 p-6 md:p-8 w-full lg:w-auto rounded-lg transition-all duration-300 hover:bg-teal-500 hover:bg-opacity-10 hover:scale-105">
+      <p class="text-center lg:text-left max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+        Hi, I am <span class="text-teal-300">Gurman Kaur</span>. I am currently pursuing B.Com. Although my academic background is in commerce, I have a strong interest in web development. I am passionate about creating websites and learning new technologies. I have worked on many projects using HTML, CSS, and Tailwind CSS. I enjoy building responsive, clean, and modern websites that provide a good user experience on all devices. I am continuously improving my skills and exploring new concepts in front-end development to grow as a professional web developer.
+      </p>
+    </div>
+    </div>
+    
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-20 px-5 max-w-5xl mx-auto">
+    <h1 class="mb-8 text-5xl md:text-4xl font-bold text-center text-teal-400">Skills</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+      <div class="p-5 text-center transition-all duration-300 hover:scale-110">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+          <div class="w-32 h-32 flex justify-center items-center mx-auto mb-4 overflow-hidden">
+            <img src="./HTML5.png" alt="HTML5 Logo" class="max-w-full h-auto object-contain">
+          </div>
+          <h3 class="text-base font-semibold ">HTML</h3>
+        </a>
+      </div>
+
+      <div class="p-5 text-center transition-all duration-300 hover:scale-110">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
+          <div class="w-32 h-32 flex justify-center items-center mx-auto mb-4 overflow-hidden">
+            <img src="./CSS3.png" alt="CSS3 Logo" class="max-w-full h-auto object-contain">
+          </div>
+          <h3 class="text-base font-semibold">CSS</h3>
+        </a>
+      </div>
+
+      <div class="p-5 text-center transition-all duration-300 hover:scale-110">
+        <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">
+          <div class="w-32 h-32 flex justify-center items-center mx-auto mb-4 overflow-hidden">
+            <img src="./Tailwind CSS.png" alt="Tailwind CSS Logo" class="max-w-full h-auto object-contain">
+          </div>
+          <h3 class="text-base font-semibold">TAILWIND</h3>
+        </a>
+      </div>
+
+      <div class="p-5 text-center transition-all duration-300 hover:scale-110">
+        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" rel="noopener noreferrer">
+          <div class="w-32 h-32 flex justify-center items-center mx-auto mb-4 overflow-hidden">
+            <img src="./C.png" alt="C Logo" class="max-w-full h-auto object-contain">
+          </div>
+          <h3 class="text-base font-semibold">C</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-20 px-5 max-w-5xl mx-auto">
+    <h1 class="mb-8 text-3xl md:text-4xl font-bold text-center text-teal-400">Projects</h1>
+    <div class="flex flex-wrap gap-6 mt-20 w-full justify-center">
+      <div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col w-full md:w-[calc(50%-12px)]">
+        <div class="w-full aspect-video overflow-hidden bg-gray-200 flex items-center justify-center">
+          <img src="./Screenshot (1).png" alt="Project One Screenshot" class="w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105">
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col w-full md:w-[calc(50%-12px)]">
+        <div class="w-full aspect-video overflow-hidden bg-gray-200 flex items-center justify-center">
+          <img src="./Screenshot (4).png" alt="Project Two Screenshot" class="w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105">
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col w-full md:w-[calc(50%-12px)]">
+        <div class="w-full aspect-video overflow-hidden bg-gray-200 flex items-center justify-center">
+          <img src="./Screenshot (5).png" alt="Project Three Screenshot" class="w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105">
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col w-full md:w-[calc(50%-12px)]">
+        <div class="w-full aspect-video overflow-hidden bg-gray-200 flex items-center justify-center">
+          <img src="./Screenshot (3).png" alt="Project Four Screenshot" class="w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-20 px-5 max-w-5xl mx-auto text-center">
+    <h1 class="mb-8 text-3xl md:text-4xl font-bold text-teal-400">Contact Me</h1>
+    <p>I am seeking opportunities as a Web Developer to build clean,responsive,and user-friendly websites please feel free to connect with me.</p>
+    <!-- <p class="text-lg mb-4">Email: your@email.com</p> -->
+    <p class="text-lg mt-4">Phone: +91-7696471330</p>
+  </section>
+
+  <!-- FOOTER -->
+  <!-- <footer class="text-center py-8 px-5 bg-gray-800 text-white">
+    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+  </footer> -->
+
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+
+    menuToggle.addEventListener('click', () => {
+      navbarMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on link click
+    const navLinks = navbarMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navbarMenu.classList.add('hidden');
+      });
+    });
+
+    // Close mobile menu on scroll
+    let lastScrollTop = 0;
+    window.addEventListener('scroll', () => {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > lastScrollTop && !navbarMenu.classList.contains('hidden')) {
+        navbarMenu.classList.add('hidden');
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  </script>
+
+</body>
+</html>
