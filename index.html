@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
 </head>
 
-<body class="bg-[#0F172A] text-white font-sans">
+<body class="bg-[#0F172A] text-white font-sans scroll-smooth">
 
   <!-- NAVIGATION -->
   <nav class="fixed w-full bg-gray-800 z-50 flex justify-between items-center px-5 md:px-8 py-3 shadow-lg">
@@ -24,16 +24,16 @@
   </nav>
 
   <!-- HERO SECTION -->
-  <section class="bg-gradient-to-r from-[#0F172A] to-[#1E293B] min-h-[90vh] flex flex-wrap gap-10 justify-center items-center pt-20 px-5 md:pt-24">
-    <div class="flex-1 min-w-[300px] max-w-[500px] ">
+  <section class="bg-gradient-to-r from-[#0F172A] to-[#1E293B] min-h-[90vh] flex flex-col md:flex-row gap-10 justify-center items-center pt-24 px-5 text-center md:text-left">
+    <div class="flex-1  max-w-[500px] ">
       <h3 class="text-white text-lg mb-2 ">Hello, I'm</h3>
       <h1 class="text-3xl md:text-5xl font-bold mb-3"><span class="text-[#188ddb]">Gurman Kaur</span></h1>
-      <p class="text-2xl md:text-3xl my-4">Web Developer</p>
-      <a href="#projects" class="inline-block px-8 py-3 bg-white text-[#188ddb] rounded-full font-bold mt-5 hover:bg-[#29a2f2] hover:text-white transition-all duration-300">View My Work</a>
+      <p class="text-xl md:text-3xl my-4">Web Developer</p>
+      <a href="#projects" class="inline-block px-8 py-3 bg-white text-[#188ddb] rounded-full font-bold mt-5 hover:bg-[#29a2f2] hover:text-white hover:scale-105 transition-all duration-300">View My Work</a>
     </div>
 
-    <div class="flex-1 min-w-[450px] max-w-[550px] overflow-hidden rounded-lg">
-      <img src="./img01.png" alt="" class="w-[110%] h-[50vh] ">
+    <div class="flex-1 w-full max-w-[450px] ">
+      <img src="./img01.png" alt="" class="w-full h-auto object-contain mx-auto ">
     </div>
   </section>
 
@@ -41,8 +41,8 @@
   <section id="about" class="py-20 px-5 max-w-5xl mx-auto ">
     <h1 class="mb-8 text-5xl md:text-4xl font-bold text-center text-[#188ddb]">About Me</h1>
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-20 justify-center items-center mt-20">
-    <div class="rounded-lg overflow-hidden w-full lg:w-auto flex justify-center min-w-[500px] max-w-[550px]"><img src="./img02.png" alt="" class="w-[110%] h-[50vh]"></div>
-    <div class="border-4 border-[#188ddb] p-6 md:p-8 w-full lg:w-auto rounded-lg transition-all duration-300 hover:bg-[#188ddb] hover:bg-opacity-10 hover:scale-105 min-w-[350px] max-w-[450px] ">
+    <div class="rounded-lg overflow-hidden w-full  flex justify-center  max-w-[550px]"><img src="./img02.png" alt="" class="w-full h-auto object-contain "></div>
+    <div class="border-4 border-[#188ddb] p-6 md:p-8 w-full max-w-[450px] rounded-lg transition-all duration-300 hover:bg-[#188ddb] hover:bg-opacity-10 hover:scale-105 ">
       <p class="text-center lg:text-left max-w-2xl mx-auto lg:mx-0 leading-relaxed">
         Hi, I am <span class="text-[#29a2f2]">Gurman Kaur</span>. I am currently pursuing B.Com. Although my academic background is in commerce, I have a strong interest in web development. I am passionate about creating websites and learning new technologies. I have worked on many projects using HTML, CSS, and Tailwind CSS. I enjoy building responsive, clean, and modern websites that provide a good user experience on all devices. I am continuously improving my skills and exploring new concepts in front-end development to grow as a professional web developer.
       </p>
@@ -51,10 +51,11 @@
     
   </section>
 
+
   <!-- SKILLS SECTION -->
   <section id="skills" class="py-20 px-5 max-w-5xl mx-auto">
     <h1 class="mb-8 text-5xl md:text-4xl font-bold text-center text-[#188ddb]">Skills</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 ">
       <div class="p-5 text-center transition-all duration-300 hover:scale-110">
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
           <div class="w-32 h-32 flex justify-center items-center mx-auto mb-4 overflow-hidden">
@@ -88,6 +89,14 @@
             <img src="./C.png" alt="C Logo" class="max-w-full h-auto object-contain">
           </div>
           <h3 class="text-base font-semibold">C</h3>
+        </a>
+      </div>
+      <div class="p-5 text-center transition-all duration-300 hover:scale-110">
+        <a href="https://en.wikipedia.org/wiki/C++" target="_blank" rel="noopener noreferrer">
+          <div class="w-32 h-32 flex justify-center items-center mx-auto mb-4 overflow-hidden ">
+            <img src="./C++.png" alt="C++ Logo" class="max-w-full h-auto object-contain">
+          </div>
+          <h3 class="text-base font-semibold">C++</h3>
         </a>
       </div>
     </div>
